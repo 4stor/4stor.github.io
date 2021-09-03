@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head> <meta charset="UTF-8">
-		<link  id='GoogleFontsLink' href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'><link  id='GoogleFontsLink' href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
 		<script asyn src="https://charts.livegap.com/js/webfont.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	</head>
@@ -31,14 +33,14 @@
 				options: {
 					plugins: {legend: false},
 					scales: {
-						x: {grid: {color: 'rgba(220, 220, 220, 0.5)'}},
+						x: {grid: {color: 'rgba(220, 220, 220, 0.3)'}},
 						
 						y: {
 							ticks: {
 							// forces step size to be 50 units
 							stepSize: 3000,
 							},
-							grid: {color: 'rgba(220, 220, 220, 0.5)'},
+							grid: {color: 'rgba(220, 220, 220, 0.3)'},
 							min: 67446,
 							// beginAtZero: true
 							
