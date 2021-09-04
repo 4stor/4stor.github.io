@@ -10,20 +10,6 @@
 	<body>
 		<canvas id="myChart" width="100%"></canvas>
 		<script>
-			const youtubeKey = 'AIzaSyDzKZNphdVDUH5JSSNJqAAlPvjUmCUkbKY';
-			const youtubeUser = 'UCS5OzrXWJmEzo6lzhWuByvQ';
-			subCount = '';
-
-			fetch('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCS5OzrXWJmEzo6lzhWuByvQ&key=AIzaSyDzKZNphdVDUH5JSSNJqAAlPvjUmCUkbKY')
-
-			.then(response => {
-				return response.json()
-			})
-			.then (data =>{ 
-				subCount = data["items"][0].statistics.subscriberCount; 
-			})
-            setTimeout(chart, 200);
-			function chart() {
 			var ctx = document.getElementById('myChart').getContext('2d');
 
 			var myChart = new Chart(ctx, {
@@ -32,10 +18,10 @@
 					labels: ['Junio', 'Julio', 'Agosto'],
 					datasets: [{
 						label: '# of Votes',
-						data: [67446, 68609, subCount],
+						data: [67446, 68609, 71778],
 						lineTension: 0.3,
 						fill: true,
-						backgroundColor: ['rgba(0, 0, 0, 0.8)'],
+						backgroundColor: ['rgba(255, 255, 255, 0.1)'],
 						borderColor: ['rgba(255, 255, 255, 0.8)'],
 						borderWidth: 1
 					}]
@@ -54,7 +40,6 @@
 					}
 				}
 			});
-		}
 			</script>
  </body>
  </html>

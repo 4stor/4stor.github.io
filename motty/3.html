@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html>
 	<head> <meta charset="UTF-8">
-		<link  id='GoogleFontsLink' href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'><link  id='GoogleFontsLink' href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
-		<script>
- WebFontConfig = {
- google: 
-{families: ["Montserrat","Open Sans",]},active: function() { 
- DrawTheChart(ChartData,ChartOptions,"chart-01","Line")}
-};
-		</script>
-		<script asyn src="https://charts.livegap.com/js/webfont.js">
-		</script><script src="https://charts.livegap.com/js/Chart.min.js"></script>
-		<script>
-function DrawTheChart(ChartData,ChartOptions,ChartId,ChartType){
-eval('var myLine = new Chart(document.getElementById(ChartId).getContext("2d")).'+ChartType+'(ChartData,ChartOptions);document.getElementById(ChartId).getContext("2d").stroke();')
-}
-		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+		<script asyn src="https://charts.livegap.com/js/webfont.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	</head>
 	<body>
-		<canvas  id="chart-01" width="400" height="300" style="background-color:rgba(0,0,0,0.65);border-radius:0px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px"></canvas>
-		<script> 
-		function MoreChartOptions(){} 
-		var ChartData = {
-			labels : ["Junio","Julio","Agosto",],
-			datasets : [{fillColor :"rgba(52,152,219,0.38)",
-			strokeColor : "rgba(52,152,219,1)",
-			pointColor : "rgba(52,152,219,1)",
-			markerShape :"circle",
-			pointStrokeColor : "rgba(0,0,0,0)",
-			data : [67446,68609,71778,],
-			title:"Youtube"},]}
-			;ChartOptions= {decimalSeparator:".",thousandSeparator:",",spaceLeft:12,spaceRight:12,spaceTop:12,spaceBottom:12,scaleLabel:"<%=value+''%>",yAxisMinimumInterval:'none',scaleShowLabels:true,scaleShowLine:true,scaleLineStyle:"solid",scaleLineWidth:2,scaleLineColor:"rgba(220,220,220,0.2)",scaleOverlay :false,scaleOverride :true,scaleSteps:3,scaleStepWidth:2000,scaleStartValue:66446,legend:false,maxLegendCols:5,legendBlockSize:15,legendFillColor:'rgba(255,255,255,0.00)',legendColorIndicatorStrokeWidth:1,legendPosX:-2,legendPosY:4,legendXPadding:0,legendYPadding:0,legendBorders:false,legendBordersWidth:1,legendBordersStyle:"solid",legendBordersColors:"rgba(102,102,102,1)",legendBordersSpaceBefore:5,legendBordersSpaceLeft:5,legendBordersSpaceRight:5,legendBordersSpaceAfter:5,legendSpaceBeforeText:5,legendSpaceLeftText:5,legendSpaceRightText:5,legendSpaceAfterText:5,legendSpaceBetweenBoxAndText:5,legendSpaceBetweenTextHorizontal:5,legendSpaceBetweenTextVertical:5,legendFontFamily:"'Open Sans'",legendFontStyle:"normal normal",legendFontColor:"rgba(0,0,0,1)",legendFontSize:15,showYAxisMin:false,rotateLabels:"smart",xAxisBottom:true,yAxisLeft:true,yAxisRight:false,scaleFontFamily:"'Montserrat'",scaleFontStyle:"normal normal",scaleFontColor:"rgba(220,220,220,1)",scaleFontSize:14,pointLabelFontFamily:"'Open Sans'",pointLabelFontStyle:"normal normal",pointLabelFontColor:"rgba(102,102,102,1)",pointLabelFontSize:12,angleShowLineOut:true,angleLineStyle:"solid",angleLineWidth:1,angleLineColor:"rgba(0,0,0,0.1)",percentageInnerCutout:50,scaleShowGridLines:true,scaleGridLineStyle:"shortDash",scaleGridLineWidth:1,scaleGridLineColor:"rgba(220,220,220,0)",scaleXGridLinesStep:3,scaleYGridLinesStep:1,segmentShowStroke:true,segmentStrokeStyle:"solid",segmentStrokeWidth:2,segmentStrokeColor:"rgba(255,255,255,1.00)",datasetStroke:true,datasetFill : true,datasetStrokeStyle:"solid",datasetStrokeWidth:0,bezierCurve:true,bezierCurveTension :0.4,pointDotStrokeStyle:"solid",pointDotStrokeWidth : 0,pointDotRadius : 5,pointDot : true,scaleTickSizeBottom:20,scaleTickSizeTop:15,scaleTickSizeLeft:20,scaleTickSizeRight:11,barShowStroke : false,barBorderRadius:0,barStrokeStyle:"solid",barStrokeWidth:1,barValueSpacing:15,barDatasetSpacing:0,scaleShowLabelBackdrop :true,scaleBackdropColor:'rgba(255,255,255,0.75)',scaleBackdropPaddingX :2,scaleBackdropPaddingY :2,animation : true,onAnimationComplete : function(){MoreChartOptions()}};
- DrawTheChart(ChartData,ChartOptions,"chart-01","Line");</script></body></html>
+		<canvas id="myChart" width="100%"></canvas>
+		<script>
+			const youtubeKey = 'AIzaSyDzKZNphdVDUH5JSSNJqAAlPvjUmCUkbKY';
+			const youtubeUser = 'UCS5OzrXWJmEzo6lzhWuByvQ';
+			subCount = '';
+
+			fetch('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCS5OzrXWJmEzo6lzhWuByvQ&key=AIzaSyDzKZNphdVDUH5JSSNJqAAlPvjUmCUkbKY')
+
+			.then(response => {
+				return response.json()
+			})
+			.then (data =>{ 
+				subCount = data["items"][0].statistics.subscriberCount; 
+			})
+            setTimeout(chart, 200);
+			function chart() {
+			var ctx = document.getElementById('myChart').getContext('2d');
+
+			var myChart = new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: ['Junio', 'Julio', 'Agosto'],
+					datasets: [{
+						label: '# of Votes',
+						data: [67446, 68609, subCount],
+						lineTension: 0.3,
+						fill: true,
+						backgroundColor: ['rgba(0, 0, 0, 0.8)'],
+						borderColor: ['rgba(255, 255, 255, 0.8)'],
+						borderWidth: 1
+					}]
+				},
+				options: {
+					plugins: {legend: false},
+					
+					scales: {
+						x: {ticks: {font: {size: 15}},
+							grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+						y: {
+							ticks: {font: {size: 15},stepSize: 10000,},
+							grid: {color: 'rgba(220, 220, 220, 0.05)'},
+							min: 67446,
+						}
+					}
+				}
+			});
+		}
+			</script>
+ </body>
+ </html>
+
