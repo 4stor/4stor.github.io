@@ -10,23 +10,33 @@
 	<body>
 		<canvas id="myChart" width="100%"></canvas>
 		<script>
+			const youtubeKey = 'AIzaSyDzKZNphdVDUH5JSSNJqAAlPvjUmCUkbKY';
+			const youtubeUser = 'UCS5OzrXWJmEzo6lzhWuByvQ';
+			subCount = '';
+
+			fetch('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCS5OzrXWJmEzo6lzhWuByvQ&key=AIzaSyDzKZNphdVDUH5JSSNJqAAlPvjUmCUkbKY')
+
+			.then(response => {
+				return response.json()
+			})
+			.then (data =>{ 
+				subCount = data["items"][0].statistics.subscriberCount; 
+			})
+            setTimeout(chart, 200);
+			function chart() {
 			var ctx = document.getElementById('myChart').getContext('2d');
-			let smooth = true
+
 			var myChart = new Chart(ctx, {
 				type: 'line',
 				data: {
 					labels: ['Junio', 'Julio', 'Agosto'],
 					datasets: [{
 						label: '# of Votes',
-						data: [67446, 68609, 71778],
+						data: [67446, 68609, subCount],
 						lineTension: 0.3,
 						fill: true,
-						backgroundColor: [
-							'rgba(255, 255, 255, 0.1)'
-						],
-						borderColor: [
-							'rgba(255, 255, 255, 0.8)',
-						],
+						backgroundColor: ['rgba(0, 0, 0, 0.8)'],
+						borderColor: ['rgba(255, 255, 255, 0.8)'],
 						borderWidth: 1
 					}]
 				},
@@ -34,23 +44,17 @@
 					plugins: {legend: false},
 					
 					scales: {
-						x: {ticks: {font: {size: 15}},grid: {color: 'rgba(220, 220, 220, 0.05)'}},
-						
+						x: {ticks: {font: {size: 15}},
+							grid: {color: 'rgba(220, 220, 220, 0.05)'}},
 						y: {
-							ticks: {
-						
-							font: {size: 15},
-							// forces step size to be 50 units
-							stepSize: 3000,
-							},
+							ticks: {font: {size: 15},stepSize: 10000,},
 							grid: {color: 'rgba(220, 220, 220, 0.05)'},
 							min: 67446,
-							// beginAtZero: true
-							
 						}
 					}
 				}
 			});
+		}
 			</script>
  </body>
  </html>
