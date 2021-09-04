@@ -17,7 +17,7 @@
 				data: {
 					labels: ['13-17', '18-24', '25-34', '35-44'],
 					datasets: [{
-						label: '# of Votes',
+						label: 'Rango de edad',
 						data: [19.2,45.7,23.3,7.5],
 						lineTension: 0.3,
 						backgroundColor: ['rgba(87, 213, 255, 1)','rgba(125, 255, 153, 1)','rgba(220, 156, 255, 1)','rgba(255, 250, 115, 1)'],
@@ -26,6 +26,8 @@
 					}]
 				},
 				options: {
+   					maintainAspectRatio: true, 
+					cutout:700,
 					plugins: {legend: false},
 					
 					scales: {
