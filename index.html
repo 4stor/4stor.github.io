@@ -13,7 +13,13 @@
 <meta content="" name="description"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width" name="viewport"/>
-<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" type="text/css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+<script asyn src="https://charts.livegap.com/js/webfont.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
 <style>
    .bee-row-1,
 		.bee-row-1 .bee-row-content,
@@ -515,6 +521,11 @@
 		p {
 			margin: 0
 		}
+		button {
+			background-color: rgba(255, 255, 255, 0);
+			border: none;
+			float: right;
+		}
 
 		.bee-desktop_hide {
 			display: none
@@ -615,12 +626,11 @@
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-text">
-<div class="bee-text-content" style="color: #C0C0C0; font-size: 12px; line-height: 120%; font-family: inherit;">
-<p style="font-size: 12px; line-height: 14px; text-align: center;">
-<em style="">
-          Toda informacion mostrada a continuacion es de caracter confidencial.
-         </em>
-</p>
+<button id="switch-es"><img alt="" height="25px" src="images/language.svg" width="auto"/></button>
+<div class="bee-text-content" style="color: #C0C0C0; font-size: 12px; font-family: inherit;">
+<p lang="en" style="font-size: 12px; line-height: 28px; text-align: center;"><em style="">All information shown below is confidential.</em></p>
+<p lang="es" style="font-size: 12px; line-height: 28px; text-align: center;"><em style="">Toda informacion mostrada a continuacion es de caracter confidencial.</em></p>
+</div>
 </div>
 </div>
 </div>
@@ -659,20 +669,30 @@
 </div>
 <div class="bee-block bee-block-4 bee-text">
 <div class="bee-text-content" style="line-height: 150%; font-size: 12px; color: #ffffff; font-family: inherit;">
-<p style="font-size: 14px; line-height: 21px; text-align: center;">
+<p lang="en" style="font-size: 14px; line-height: 21px; text-align: center;">
 <span style="font-size: 16px; line-height: 24px;">
-          Mi nombre es Tomas Sosa, en internet me conocen como "Tmotty" o "Motty" desde ya hace un tiempo.
+          My name is Tomas Sosa, on the internet I have been known as "Tmotty" or "Motty" for some time now.
           <br style=""/>
-          Actualmente tengo 18 años, estoy radicado en Buenos Aires y me dedico a crear contenido,  ser editor de jugadores profesionales de Fortnite y realizar streams.
+          I'm currently 18 years old, based in Buenos Aires and I'm dedicated to creating content, being an editor of professional Fortnite players and making streams.
          </span>
 </p>
+<p lang="es" style="font-size: 14px; line-height: 21px; text-align: center;">
+	<span style="font-size: 16px; line-height: 24px;">
+			  Mi nombre es Tomas Sosa, en internet me conocen como "Tmotty" o "Motty" desde ya hace un tiempo.
+			  <br style=""/>
+			  Actualmente tengo 18 años, estoy radicado en Buenos Aires y me dedico a crear contenido,  ser editor de jugadores profesionales de Fortnite y realizar streams.
+			 </span>
+	</p>
 </div>
 </div>
 <div class="bee-block bee-block-5 bee-text">
 <div class="bee-text-content" style="line-height: 150%; font-size: 12px; color: #dcdcdc; font-family: inherit;">
-<p style="font-size: 14px; line-height: 21px; text-align: center;">
+<p lang="es" style="font-size: 14px; line-height: 21px; text-align: center;">
          Trabajo actualmente con plataformas como: Tiktok, Youtube, Twitch e Instagram
         </p>
+<p lang="en" style="font-size: 14px; line-height: 21px; text-align: center;">
+	I currently work with platforms such as: Tiktok, Youtube, Twitch and Instagram
+	</p>
 </div>
 </div>
 </div>
@@ -704,18 +724,24 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: left;">
 <strong style="">
-<span style="font-size: 38px; line-height: 45px;">
+<span lang="es"style="font-size: 38px; line-height: 45px;">
            Redes
           </span>
+		  <span lang="en"style="font-size: 38px; line-height: 45px;">
+			Socials
+		   </span>
 </strong>
 </p>
 </div>
 </div>
 <div class="bee-block bee-block-2 bee-text">
 <div class="bee-text-content" style="line-height: 150%; font-size: 12px; color: #dcdcdc; font-family: inherit;">
-<p style="font-size: 14px; line-height: 21px; text-align: left;">
+<p lang="es" style="font-size: 14px; line-height: 21px; text-align: left;">
          Concentrandome en un constante crecimiento para lograr a mayor cantidad de audiencia, incluyo a la audiencia en mi dia a dia y busco su interaccion en la toma de decisiones mediante encuestas o preguntas.
         </p>
+<p lang="en" style="font-size: 14px; line-height: 21px; text-align: left;">
+	Focusing on constant growth to reach a larger audience, I include the audience in my day-to-day work and seek their interaction in decision making through surveys or questions.
+	</p>
 </div>
 </div>
 </div>
@@ -744,9 +770,12 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="font-size: 12px; line-height: 200%; font-family: inherit; color: #dcdcdc;">
 <p style="font-size: 12px; line-height: 24px; text-align: center;">
-<span style="color: #beb8b8; line-height: 24px;">
-          Tiempo: 90 dias • User: ttmotty
-         </span>
+<span lang="es" style="color: #beb8b8; line-height: 24px;">
+Tiempo: 90 dias • User: ttmotty
+</span>
+<span lang ="en" style="color: #beb8b8; line-height: 24px;">
+Date: 90 days • User: ttmotty
+</span>
 </p>
 </div>
 </div>
@@ -775,9 +804,12 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 15px; line-height: 18px;">
-          Seguidores
-         </span>
+<span lang = "es" style="font-size: 15px; line-height: 18px;">
+ Seguidores
+</span>
+<span lang = "en" style="font-size: 15px; line-height: 18px;">
+	Followers
+   </span>
 </p>
 </div>
 </div>
@@ -806,9 +838,12 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 16px; line-height: 19px;">
-          Interacciones
-         </span>
+<span lang = "es" style="font-size: 16px; line-height: 19px;">
+Impresiones
+</span>
+<span lang = "en" style="font-size: 16px; line-height: 19px;">
+Impressions
+</span>
 </p>
 </div>
 </div>
@@ -837,9 +872,12 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 15px; line-height: 18px;">
-          Alcanzadas
+<span lang ="es" style="font-size: 15px; line-height: 18px;">
+          C. Alcanzadas
          </span>
+		 <span lang="en" style="font-size: 15px; line-height: 18px;">
+			Acc. reach
+		   </span>
 </p>
 </div>
 </div>
@@ -860,9 +898,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Seguidores
-          </span>
+<span lang="es" style="line-height: 14px;">Seguidores</span>
+<span lang="en" style="line-height: 14px;">Followers</span>
 </span>
 </p>
 </div>
@@ -878,19 +915,8 @@
 <div class="bee-col bee-col-2 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/instagram1.html">
-</iframe>
+	<canvas id="Instagram1" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -900,26 +926,16 @@
 <div class="bee-col bee-col-1 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block bee-mobile_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/instagram2.html">
-</iframe>
+	<canvas id="Instagram2" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 <div class="bee-block bee-block-2 bee-text bee-desktop_hide">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
 <span style="line-height: 14px;">
-           Interacciones
+	<span lang="es" style="line-height: 14px;">Impresiones</span>
+	<span lang="en" style="line-height: 14px;">Impressions</span>
           </span>
 </span>
 </p>
@@ -938,9 +954,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Interacciones
-          </span>
+	<span lang="es" style="line-height: 14px;">Impresiones</span>
+	<span lang="en" style="line-height: 14px;">Impressions</span>
 </span>
 </p>
 </div>
@@ -954,19 +969,8 @@
 </div>
 <div class="bee-block bee-block-4 bee-html-block bee-desktop_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/instagram2.html">
-</iframe>
+	<canvas id="Instagram3d" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -985,9 +989,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Cuentas Alcanzadas
-          </span>
+<span lang="es" style="line-height: 14px;">Cuentas Alcanzadas</span>
+<span lang="en" style="line-height: 14px;">Accounts reach</span>
 </span>
 </p>
 </div>
@@ -1003,19 +1006,8 @@
 <div class="bee-col bee-col-2 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/instagram3.html">
-</iframe>
+	<canvas id="Instagram3" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -1042,9 +1034,8 @@
 </div>
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="font-size: 12px; line-height: 200%; color: #dcdcdc; font-family: inherit;">
-<p style="line-height: 24px; text-align: center;">
-         Tiempo: 90 dias • User: tmotty
-        </p>
+<p lang="es" style="line-height: 24px; text-align: center;">Tiempo: 90 dias • User: tmotty</p>
+<p lang="en" style="line-height: 24px; text-align: center;">Date: 90 days • User: tmotty</p>
 </div>
 </div>
 </div>
@@ -1072,9 +1063,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 15px; line-height: 18px;">
-          Seguidores
-         </span>
+<span lang="es" style="font-size: 15px; line-height: 18px;">Seguidores</span>
+<span lang="en" style="font-size: 15px; line-height: 18px;">Followers</span>
 </p>
 </div>
 </div>
@@ -1103,9 +1093,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 16px; line-height: 19px;">
-          Viewers
-         </span>
+<span lang="es" style="font-size: 16px; line-height: 19px;">Viewers</span>
+<span lang="en" style="font-size: 16px; line-height: 19px;">Viewers</span>
 </p>
 </div>
 </div>
@@ -1134,9 +1123,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 15px; line-height: 18px;">
-          Vistas
-         </span>
+<span lang="es" style="font-size: 15px; line-height: 18px;">Vistas</span>
+<span lang="en" style="font-size: 15px; line-height: 18px;">Views</span>
 </p>
 </div>
 </div>
@@ -1157,9 +1145,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Seguidores
-          </span>
+<span lang="es" style="line-height: 14px;">Seguidores</span>
+<span lang="en" style="line-height: 14px;">Followers</span>
 </span>
 </p>
 </div>
@@ -1175,19 +1162,8 @@
 <div class="bee-col bee-col-2 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/twitch1.html">
-</iframe>
+	<canvas id="Twitch1" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -1197,19 +1173,8 @@
 <div class="bee-col bee-col-1 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block bee-mobile_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/twitch2.html">
-</iframe>
+	<canvas id="Twitch2d" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 <div class="bee-block bee-block-2 bee-text bee-desktop_hide">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
@@ -1251,19 +1216,8 @@
 </div>
 <div class="bee-block bee-block-4 bee-html-block bee-desktop_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/twitch2.html">
-</iframe>
+	<canvas id="Twitch2" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -1282,9 +1236,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Vistas
-          </span>
+<span lang="es" style="line-height: 14px;">Vistas</span>
+<span lang="en" style="line-height: 14px;">Views</span>
 </span>
 </p>
 </div>
@@ -1300,19 +1253,8 @@
 <div class="bee-col bee-col-2 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/twitch3.html">
-</iframe>
+	<canvas id="Twitch3" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -1340,9 +1282,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="font-size: 12px; line-height: 200%; font-family: inherit; color: #dcdcdc;">
 <p style="font-size: 12px; line-height: 24px; text-align: center;">
-<span style="color: #beb8b8; line-height: 24px;">
-          Tiempo: 90 dias • User: ttmotty
-         </span>
+<span lang="es" style="color: #beb8b8; line-height: 24px;">Tiempo: 90 dias • User: ttmotty</span>
+<span lang="en" style="color: #beb8b8; line-height: 24px;">Date: 90 days • User: ttmotty</span>
 </p>
 </div>
 </div>
@@ -1371,9 +1312,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 15px; line-height: 18px;">
-          Seguidores
-         </span>
+<span lang="es" style="font-size: 15px; line-height: 18px;">Seguidores</span>
+<span lang="en" style="font-size: 15px; line-height: 18px;">Followers</span>
 </p>
 </div>
 </div>
@@ -1402,9 +1342,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 16px; line-height: 19px;">
-          Impresiones
-         </span>
+<span lang="es" style="font-size: 16px; line-height: 19px;">Interacciones</span>
+<span lang="en" style="font-size: 16px; line-height: 19px;">Interactions</span>
 </p>
 </div>
 </div>
@@ -1433,9 +1372,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 15px; line-height: 18px;">
-          Visitas
-         </span>
+<span lang="es" style="font-size: 15px; line-height: 18px;">Visitas</span>
+<span lang="en" style="font-size: 15px; line-height: 18px;">Visits</span>
 </p>
 </div>
 </div>
@@ -1456,9 +1394,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Impresiones
-          </span>
+<span lang="es" style="line-height: 14px;">Interacciones</span>
+<span lang="en" style="line-height: 14px;">Interactions</span>
 </span>
 </p>
 </div>
@@ -1474,19 +1411,8 @@
 <div class="bee-col bee-col-2 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/twitter1.html">
-</iframe>
+	<canvas id="Twitter1" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -1496,27 +1422,15 @@
 <div class="bee-col bee-col-1 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block bee-mobile_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/twitter2.html">
-</iframe>
+	<canvas id="Twitter2" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 <div class="bee-block bee-block-2 bee-text bee-desktop_hide">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Visitas
-          </span>
+<span lang="es" style="line-height: 14px;">Visitas</span>
+<span lang="en" style="line-height: 14px;">Visits</span>
 </span>
 </p>
 </div>
@@ -1534,9 +1448,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Visitas
-          </span>
+	<span lang="es" style="line-height: 14px;">Visitas</span>
+	<span lang="en" style="line-height: 14px;">Visits</span>
 </span>
 </p>
 </div>
@@ -1550,19 +1463,9 @@
 </div>
 <div class="bee-block bee-block-4 bee-html-block bee-desktop_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/twitter2.html">
-</iframe>
+	<canvas id="Twitter2d" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
 
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -1590,9 +1493,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="font-size: 12px; line-height: 200%; font-family: inherit; color: #dcdcdc;">
 <p style="font-size: 12px; line-height: 24px; text-align: center;">
-<span style="color: #beb8b8; line-height: 24px;">
-          Tiempo: 90 dias • User: tmotty
-         </span>
+<span lang="es" style="color: #beb8b8; line-height: 24px;">Tiempo: 90 dias • User: tmotty</span>
+<span lang="en" style="color: #beb8b8; line-height: 24px;">Date: 90 days • User: tmotty</span>
 </p>
 </div>
 </div>
@@ -1621,9 +1523,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 16px; line-height: 19px;">
-          Suscriptores
-         </span>
+<span lang="es" style="font-size: 16px; line-height: 19px;">Suscriptores</span>
+<span lang="en" style="font-size: 16px; line-height: 19px;">Subscribers</span>
 </p>
 </div>
 </div>
@@ -1652,9 +1553,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 16px; line-height: 19px;">
-          Visitas totales
-         </span>
+<span lang="es" style="font-size: 16px; line-height: 19px;">Visitas totales</span>
+<span lang="en" style="font-size: 16px; line-height: 19px;">Total visits</span>
 </p>
 </div>
 </div>
@@ -1706,9 +1606,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Suscriptores
-          </span>
+<span lang="es" style="line-height: 14px;">Suscriptores</span>
+<span lang="en" style="line-height: 14px;">Subscribers</span>
 </span>
 </p>
 </div>
@@ -1724,19 +1623,8 @@
 <div class="bee-col bee-col-2 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/youtube2.html">
-</iframe>
+	<canvas id="Youtube2" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -1746,27 +1634,15 @@
 <div class="bee-col bee-col-1 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block bee-mobile_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/youtube1.html">
-</iframe>
+	<canvas id="Youtube1" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 <div class="bee-block bee-block-2 bee-text bee-desktop_hide">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Visitas totales
-          </span>
+<span lang="es" style="line-height: 14px;">Visitas totales</span>
+<span lang="en" style="line-height: 14px;">Total visits</span>
 </span>
 </p>
 </div>
@@ -1784,9 +1660,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Visitas totales
-          </span>
+	<span lang="es" style="line-height: 14px;">Visitas totales</span>
+	<span lang="en" style="line-height: 14px;">Total visits</span>
 </span>
 </p>
 </div>
@@ -1800,19 +1675,9 @@
 </div>
 <div class="bee-block bee-block-4 bee-html-block bee-desktop_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/youtube1.html">
-</iframe>
+	<canvas id="Youtube1d" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
 
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -1840,9 +1705,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="font-size: 12px; line-height: 200%; font-family: inherit; color: #dcdcdc;">
 <p style="font-size: 12px; line-height: 24px; text-align: center;">
-<span style="color: #beb8b8; line-height: 24px;">
-          Tiempo: 90 dias • User: tmotty
-         </span>
+<span lang="es" style="color: #beb8b8; line-height: 24px;">Tiempo: 90 dias • User: tmotty</span>
+<span lang="en" style="color: #beb8b8; line-height: 24px;">Date: 90 days • User: tmotty</span>
 </p>
 </div>
 </div>
@@ -1871,9 +1735,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 16px; line-height: 19px;">
-          Seguidores
-         </span>
+<span lang="es" style="font-size: 16px; line-height: 19px;">Seguidores</span>
+<span lang="en" style="font-size: 16px; line-height: 19px;">Followers</span>
 </p>
 </div>
 </div>
@@ -1956,9 +1819,8 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
 <span style="font-size: 24px; line-height: 28px;">
-<span style="line-height: 14px;">
-           Seguidores
-          </span>
+<span lang="es" style="line-height: 14px;">Seguidores</span>
+<span lang="en" style="line-height: 14px;">Followers</span>
 </span>
 </p>
 </div>
@@ -1974,19 +1836,8 @@
 <div class="bee-col bee-col-2 bee-col-w6">
 <div class="bee-block bee-block-1 bee-html-block">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/tiktok1.html">
-</iframe>
+	<canvas id="Tiktok1" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -2010,19 +1861,8 @@
 </div>
 <div class="bee-block bee-block-2 bee-html-block bee-mobile_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/tiktok2.html">
-</iframe>
+	<canvas id="Tiktok2" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 <div class="bee-block bee-block-3 bee-text bee-desktop_hide">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
@@ -2064,19 +1904,8 @@
 </div>
 <div class="bee-block bee-block-4 bee-html-block bee-desktop_hide">
 <div id="hola">
-<iframe id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/tiktok2.html">
-</iframe>
+	<canvas id="Tiktok2d" width="100%"></canvas>
 </div>
-<style>
-        inlineFrameExample {
-								width: 100%;
-								height: 100%
-							}
-
-							iframe {
-								border: none;
-							}
-       </style>
 </div>
 </div>
 </div>
@@ -2092,18 +1921,16 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: left;">
 <strong style="">
-<span style="font-size: 38px; line-height: 45px;">
-           Objetivos
-          </span>
+<span lang="es" style="font-size: 38px; line-height: 45px;">Objetivos</span>
+<span lang="en" style="font-size: 38px; line-height: 45px;">Targets</span>
 </strong>
 </p>
 </div>
 </div>
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 150%; font-size: 12px; color: #dcdcdc; font-family: inherit;">
-<p style="font-size: 14px; line-height: 21px; text-align: left;">
-         Mi objetivo es lograr una simbiosis con la marca, logrando de esta manera un crecimiento mutuo, permitiendo a la marca expandir su publico y el conocimiento acerca de sus productos o servicios.
-        </p>
+<p lang="es" style="font-size: 14px; line-height: 21px; text-align: left;">Mi objetivo es lograr una simbiosis con la marca, logrando de esta manera un crecimiento mutuo, permitiendo a la marca expandir su publico y el conocimiento acerca de sus productos o servicios.</p>
+<p lang="en" style="font-size: 14px; line-height: 21px; text-align: left;">My goal is to achieve a symbiosis with the brand, thus achieving mutual growth, allowing the brand to expand its audience and knowledge about their products or services.</p>
 </div>
 </div>
 </div>
@@ -2117,9 +1944,8 @@
 <p style="font-size: 14px; line-height: 28px; text-align: center;">
 <span style="font-size: 26px; line-height: 52px;">
 <strong style="">
-<span style="line-height: 24px;">
-            Marca
-           </span>
+<span lang="en" style="line-height: 24px;">Brand</span>
+<span lang="es" style="line-height: 24px;">Marca</span>
 </strong>
 </span>
 </p>
@@ -2141,9 +1967,8 @@
 <p style="font-size: 14px; line-height: 21px; text-align: center;">
 <span style="font-size: 26px; line-height: 39px;">
 <strong style="">
-<span style="line-height: 18px;">
-            Creador
-           </span>
+<span lang="es" style="line-height: 18px;">Creador</span>
+<span lang="en" style="line-height: 18px;">Creator</span>
 </strong>
 </span>
 </p>
@@ -2174,9 +1999,8 @@
 <p style="font-size: 14px; line-height: 21px; text-align: center;">
 <span style="font-size: 26px; line-height: 39px;">
 <strong style="">
-<span style="line-height: 18px;">
-            Publico
-           </span>
+<span lang="es" style="line-height: 18px;">Publico</span>
+<span lang="en" style="line-height: 18px;">Specific</span>
 </strong>
 </span>
 </p>
@@ -2185,9 +2009,8 @@
 <div class="bee-block bee-block-2 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 13px; line-height: 15px;">
-          Especifico
-         </span>
+<span lang="es"style="font-size: 13px; line-height: 15px;">Especifico</span>
+<span lang="en" style="font-size: 13px; line-height: 15px;">Public</span>
 </p>
 </div>
 </div>
@@ -2202,9 +2025,8 @@
 <p style="font-size: 14px; line-height: 28px; text-align: center;">
 <span style="font-size: 26px; line-height: 52px;">
 <strong style="">
-<span style="line-height: 24px;">
-            Marca
-           </span>
+<span lang="es" style="line-height: 24px;">Marca</span>
+<span lang="en" style="line-height: 24px;">Brand</span>
 </strong>
 </span>
 </p>
@@ -2226,9 +2048,8 @@
 <p style="font-size: 14px; line-height: 21px; text-align: center;">
 <span style="font-size: 26px; line-height: 39px;">
 <strong style="">
-<span style="line-height: 18px;">
-            Creador
-           </span>
+	<span lang="es" style="line-height: 18px;">Creador</span>
+	<span lang="en" style="line-height: 18px;">Creator</span>
 </strong>
 </span>
 </p>
@@ -2259,9 +2080,8 @@
 <p style="font-size: 14px; line-height: 21px; text-align: center;">
 <span style="font-size: 26px; line-height: 39px;">
 <strong style="">
-<span style="line-height: 18px;">
-            Publico
-           </span>
+	<span lang="es" style="line-height: 18px;">Publico</span>
+	<span lang="en" style="line-height: 18px;">Specific</span>
 </strong>
 </span>
 </p>
@@ -2270,16 +2090,15 @@
 <div class="bee-block bee-block-2 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 13px; line-height: 15px;">
-          Especifico
-         </span>
+	<span lang="es"style="font-size: 13px; line-height: 15px;">Especifico</span>
+	<span lang="en" style="font-size: 13px; line-height: 15px;">Public</span>
 </p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="bee-row bee-row-25">
+<div class="bee-row bee-row-25" >
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w4">
 <div class="bee-block bee-block-1 bee-text">
@@ -2289,7 +2108,7 @@
         </p>
 </div>
 </div>
-<div class="bee-block bee-block-2 bee-text bee-mobile_hide">
+<div class="bee-block bee-block-2 bee-text bee-mobile_hide" >
 <div class="bee-text-content" style="font-size: 12px; line-height: 200%; color: #ffffff; font-family: inherit;">
 <p style="font-size: 12px; line-height: 24px;">
           
@@ -2300,9 +2119,8 @@
 <div class="bee-text-content" style="line-height: 200%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 28px; text-align: center;">
 <span style="font-size: 24px; line-height: 48px;">
-<span style="line-height: 24px;">
-           Rango de edad
-          </span>
+<span lang="es" style="line-height: 24px;">Rango de edad</span>
+<span lang="en" style="line-height: 24px;">Age range</span>
 </span>
 </p>
 </div>
@@ -2319,18 +2137,11 @@
 <div class="bee-block bee-block-1 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-          
         </p>
 </div>
 </div>
-<div class="bee-block bee-block-2 bee-html-block">
-<iframe height="200" id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/objetivos1.html" width='200"'>
-</iframe>
-<style>
-        iframe {
-								border: none;
-							}
-       </style>
+<div class="bee-block bee-block-2 bee-html-block" style="width:80%; transform: translate(10%,10%)">
+	<canvas id="Objetivos1"></canvas>
 </div>
 </div>
 <div class="bee-col bee-col-3 bee-col-w3">
@@ -2453,14 +2264,8 @@
         </p>
 </div>
 </div>
-<div class="bee-block bee-block-2 bee-html-block">
-<iframe height="200" id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/objetivos2.html" width='200"'>
-</iframe>
-<style>
-        iframe {
-								border: none;
-							}
-       </style>
+<div class="bee-block bee-block-2 bee-html-block" style="width:80%; transform: translate(10%,10%)">
+	<canvas id="Objetivos2"></canvas>
 </div>
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
@@ -2489,9 +2294,8 @@
 <div class="bee-text-content" style="line-height: 200%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 28px; text-align: center;">
 <span style="font-size: 24px; line-height: 48px;">
-<span style="line-height: 24px;">
-           Pais de origen
-          </span>
+<span lang="es" style="line-height: 24px;">Pais de origen</span>
+<span lang="en" style="line-height: 24px;">Country of origin</span>
 </span>
 </p>
 </div>
@@ -2513,9 +2317,8 @@
 <div class="bee-text-content" style="line-height: 200%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 28px; text-align: center;">
 <span style="font-size: 24px; line-height: 48px;">
-<span style="line-height: 24px;">
-           Pais de origen
-          </span>
+<span lang="es" style="line-height: 24px;">Pais de origen</span>
+<span lang="en" style="line-height: 24px;">Country of origin</span>
 </span>
 </p>
 </div>
@@ -2529,14 +2332,8 @@
         </p>
 </div>
 </div>
-<div class="bee-block bee-block-2 bee-html-block bee-desktop_hide">
-<iframe height="200" id="inlineFrameExample" scrolling="no" src="https://4stor.github.io/motty/objetivos2.html" width='200"'>
-</iframe>
-<style>
-        iframe {
-								border: none;
-							}
-       </style>
+<div class="bee-block bee-block-2 bee-html-block bee-desktop_hide" style="width:80%; transform: translate(10%,0)"> 
+	<canvas id="Objetivos2d"></canvas>
 </div>
 </div>
 <div class="bee-col bee-col-3 bee-col-w4">
@@ -2602,9 +2399,8 @@
 <div class="bee-block bee-block-2 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 16px; line-height: 19px;">
-          Jovenes entre 13 y 24 años
-         </span>
+<span lang="es" style="font-size: 16px; line-height: 19px;">Jovenes entre 13 y 24 años</span>
+<span lang="en" style="font-size: 16px; line-height: 19px;">Young people between 13 and 24</span>
 </p>
 </div>
 </div>
@@ -2624,9 +2420,8 @@
 <div class="bee-block bee-block-2 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 16px; line-height: 19px;">
-          Publico Argentino
-         </span>
+<span lang="es" style="font-size: 16px; line-height: 19px;">Publico Argentino</span>
+<span lang="en" style="font-size: 16px; line-height: 19px;">Argentinian Public</span>
 </p>
 </div>
 </div>
@@ -2644,18 +2439,16 @@
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: left;">
 <strong style="">
-<span style="font-size: 38px; line-height: 45px;">
-           Propuesta
-          </span>
+<span lang="es" style="font-size: 38px; line-height: 45px;">Propuesta</span>
+<span lang="en" style="font-size: 38px; line-height: 45px;">Proposal</span>
 </strong>
 </p>
 </div>
 </div>
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 150%; font-size: 12px; color: #dcdcdc; font-family: inherit;">
-<p style="font-size: 14px; line-height: 21px; text-align: left;">
-         Basada en varios formatos comerciales mis propuestas basicas son la realizacion de unboxings, reviews, publicidad y eventos, aunque permanezco abierto a cualquier otra propuesta de formato comercial.
-        </p>
+<p lang="es" style="font-size: 14px; line-height: 21px; text-align: left;">Basada en varios formatos comerciales mis propuestas basicas son la realizacion de unboxings, reviews, publicidad y eventos, aunque permanezco abierto a cualquier otra propuesta de formato comercial.</p>
+<p lang="en" style="font-size: 14px; line-height: 21px; text-align: left;">Based on several commercial formats my basic proposals are the realization of unboxings, reviews, advertising and events, although I remain open to any other proposal of commercial format.</p>
 </div>
 </div>
 </div>
@@ -2679,9 +2472,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 12px; color: #dcdcdc; line-height: 14px;">
-           (Desempaquetado del producto, su filmacion y su posterior publicacion)
-         </span>
+<span lang="es" style="font-size: 12px; color: #dcdcdc; line-height: 14px;">(Desempaquetado del producto, su filmacion y su posterior publicacion)</span>
+<span lang="en" style="font-size: 12px; color: #dcdcdc; line-height: 14px;">(Unpacking of the product, its filming and subsequent publication)</span>
 </p>
 </div>
 </div>
@@ -2702,9 +2494,8 @@
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 12px; color: #dcdcdc; line-height: 14px;">
-           (Elaboración de una opinión propia basada en el producto, su filmacion y su posterior publicacion)
-         </span>
+<span lang="es" style="font-size: 12px; color: #dcdcdc; line-height: 14px;">(Elaboración de una opinión propia basada en el producto, su filmacion y su posterior publicacion)</span>
+<span lang="en" style="font-size: 12px; color: #dcdcdc; line-height: 14px;">(Elaboration of an own opinion based on the product, its filming and its subsequent publication)</span>
 </p>
 </div>
 </div>
@@ -2716,18 +2507,16 @@
 <div class="bee-block bee-block-2 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 12px; line-height: 14px;">
-          Publicidad
-         </span>
+<span lang="es" style="font-size: 12px; line-height: 14px;">Publicidad</span>
+<span lang="en" style="font-size: 12px; line-height: 14px;">Advertising</span>
 </p>
 </div>
 </div>
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 12px; color: #dcdcdc; line-height: 14px;">
-           (Representacion de la marca en mis redes sociales y en mis plataformas de creacion de contenido como Twitch y Youtube)
-         </span>
+<span lang="es" style="font-size: 12px; color: #dcdcdc; line-height: 14px;">(Representacion de la marca en mis redes sociales y en mis plataformas de creacion de contenido como Twitch y Youtube)</span>
+<span lang="en" style="font-size: 12px; color: #dcdcdc; line-height: 14px;">(Brand representation on my social networks and on my content creation platforms like Twitch and Youtube)</span>
 </p>
 </div>
 </div>
@@ -2739,18 +2528,16 @@
 <div class="bee-block bee-block-2 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 12px; line-height: 14px;">
-          Eventos
-         </span>
+<span lang="es" style="font-size: 12px; line-height: 14px;">Eventos</span>
+<span lang="en" style="font-size: 12px; line-height: 14px;">Events</span>
 </p>
 </div>
 </div>
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 16px; text-align: center;">
-<span style="font-size: 12px; color: #dcdcdc; line-height: 14px;">
-           (Representacion de la marca en eventos fisicos que requerian de mi presencia)
-         </span>
+<span lang="es" style="font-size: 12px; color: #dcdcdc; line-height: 14px;">(Representacion de la marca en eventos fisicos que requerian de mi presencia)</span>
+<span lang="en" style="font-size: 12px; color: #dcdcdc; line-height: 14px;">(Representation of the brand in physical events that required my presence)</span>
 </p>
 </div>
 </div>
@@ -2783,9 +2570,8 @@
 <div class="bee-text-content" style="line-height: 180%; font-size: 12px; color: #ffffff; font-family: inherit;">
 <p style="font-size: 14px; line-height: 25px; text-align: center;">
 <span style="font-size: 24px; line-height: 43px;">
-<span style="line-height: 21px;">
-           Gracias por su atencin
-          </span>
+<span lang="es" style="line-height: 21px;">Gracias por su atencion</span>
+<span lang="en" style="line-height: 21px;">Thanks for your time</span>
 </span>
 </p>
 </div>
@@ -2822,9 +2608,8 @@
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-text">
 <div class="bee-text-content" style="color: #C0C0C0; font-size: 12px; line-height: 120%; font-family: inherit;">
-<p style="font-size: 12px; line-height: 14px; text-align: center;">
-         Todas mis redes sociales debajo.
-        </p>
+<p lang="es" style="font-size: 12px; line-height: 14px; text-align: center;">Todas mis redes sociales debajo.</p>
+<p lang="en" style="font-size: 12px; line-height: 14px; text-align: center;">All my socials below.</p>
 </div>
 </div>
 <div class="bee-block bee-block-2 bee-social">
@@ -2858,7 +2643,7 @@
 </div>
 <div class="bee-block bee-block-3 bee-text">
 <div class="bee-text-content" style="color: #C0C0C0; font-size: 12px; line-height: 120%; font-family: inherit;">
-<p style="font-size: 12px; line-height: 14px; text-align: center;">
+<p lang="es" style="font-size: 12px; line-height: 14px; text-align: center;">
          Toda la informacion fue extraida desde
          <a href="https://twitchtracker.com/" rel="noopener" style="text-decoration: underline; color: #FFFFFF;" target="_blank">
           TwitchTracker
@@ -2869,6 +2654,17 @@
          </a>
          y mis redes sociales.
         </p>
+<p lang="en" style="font-size: 12px; line-height: 14px; text-align: center;">
+	All information was taken from
+	<a href="https://twitchtracker.com/" rel="noopener" style="text-decoration: underline; color: #FFFFFF;" target="_blank">
+		TwitchTracker
+	</a>
+	,
+	<a href="https://socialblade.com/" rel="noopener" style="text-decoration: underline; color: #FFFFFF;" target="_blank">
+		Socialblade
+	</a>
+	and my socials.
+	</p>
 </div>
 </div>
 </div>
@@ -2886,4 +2682,639 @@
 </div>
 </div>
 </body>
+
+<!-- Script -->
+<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+<script type="text/javascript">
+
+
+$('[lang="es"]').hide();
+var currentTIME =  ['June', 'July', 'August']
+
+$('#switch-es').click(function() {
+  $('[lang="es"]').toggle();
+  $('[lang="en"]').toggle();
+  if ($('[lang="es"]').is(":visible")){currentTIME = ['Junio', 'Julio', 'Agosto']}
+  if ($('[lang="en"]').is(":visible")){currentTIME = ['June', 'July', 'August']}
+  Updateame(currentTIME)
+});
+
+
+var Instagram1ctx = document.getElementById('Instagram1').getContext('2d');
+var Instagram1 = new Chart(Instagram1ctx, {type: 'line',data: {labels:  currentTIME,datasets: [{label: 'Seguidores',data: [67446, 68609, 71778],lineTension: 0.3,fill: true,backgroundColor: ['rgba(255, 255, 255, 0.1)'],borderColor: ['rgba(255, 255, 255, 0.8)'],borderWidth: 1}]},options: {plugins: {legend: false},scales: {x: {ticks: {font: {size: 15}},grid: {color: 'rgba(220, 220, 220, 0.05)'}},y: {ticks: {font: {size: 15},stepSize: 10000,},grid: {color: 'rgba(220, 220, 220, 0.05)'},min: 67446,}}}});
+
+var Instagram2ctx = document.getElementById('Instagram2').getContext('2d');
+
+var Instagram2 = new Chart(Instagram2ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Interacciones',
+			data: [23047,20587,31549],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 10000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 20587,
+			}
+		}
+	}
+});
+
+var Instagram3ctx = document.getElementById('Instagram3').getContext('2d');
+
+var Instagram3 = new Chart(Instagram3ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Cuentas alcanzadas',
+			data: [73789,72470,81895],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 10000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 72470,
+			}
+		}
+	}
+});
+var Instagram3dctx = document.getElementById('Instagram3d').getContext('2d');
+
+var Instagram3d = new Chart(Instagram3dctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Cuentas alcanzadas',
+			data: [73789,72470,81895],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 10000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 72470,
+			}
+		}
+	}
+});
+
+var Objetivos1ctx = document.getElementById('Objetivos1').getContext('2d');
+console.log(Objetivos1ctx)
+
+var Objetivos1 = new Chart(Objetivos1ctx, {
+	type: 'doughnut',
+	data: {
+		labels: ['13-17', '18-24', '25-34', '35-44'],
+		datasets: [{
+			label: 'Rango de edad',
+			data: [19.2,45.7,23.3,7.5],
+			lineTension: 0.3,
+			backgroundColor: ['rgba(87, 213, 255, 1)','rgba(125, 255, 153, 1)','rgba(220, 156, 255, 1)','rgba(255, 250, 115, 1)'],
+			borderColor: ['rgba(255, 255, 255, 0)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		
+		plugins: {legend: false},
+		scales: {}
+	}
+});
+
+var Objetivos2ctx = document.getElementById('Objetivos2').getContext('2d');
+
+			var Objetivos2 = new Chart(Objetivos2ctx, {
+				type: 'doughnut',
+				data: {
+					labels: ['Argentina', 'Chile', 'Mexico', 'Peru','Uruguay'],
+					datasets: [{
+						label: 'Rango de publico',
+						data: [57.1,13.0,7.3,4.0,2.6],
+						lineTension: 0.3,
+						backgroundColor: ['rgba(229,218,131,1)','rgba(121,211,250,1)','rgba(159,250,163,1)','rgba(175,136,206,1)', 'rgba(255,140,140,1)'],
+						borderColor: ['rgba(255, 255, 255, 0)'],
+						borderWidth: 1
+					}]
+				},
+				options: {
+					
+					plugins: {legend: false},
+					
+					scales: {
+
+					}
+				}
+			});
+
+var Objetivos2dctx = document.getElementById('Objetivos2d').getContext('2d');
+
+var Objetivos2d = new Chart(Objetivos2dctx, {
+	type: 'doughnut',
+	data: {
+		labels: ['Argentina', 'Chile', 'Mexico', 'Peru','Uruguay'],
+		datasets: [{
+			label: 'Rango de publico',
+			data: [57.1,13.0,7.3,4.0,2.6],
+			lineTension: 0.3,
+			backgroundColor: ['rgba(229,218,131,1)','rgba(121,211,250,1)','rgba(159,250,163,1)','rgba(175,136,206,1)', 'rgba(255,140,140,1)'],
+			borderColor: ['rgba(255, 255, 255, 0)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		
+		plugins: {legend: false},
+		
+		scales: {
+
+		}
+	}
+});
+
+var Tiktok1ctx = document.getElementById('Tiktok1').getContext('2d');
+
+var Tiktok1 = new Chart(Tiktok1ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Seguidores',
+			data: [269143,271976,278399],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 10000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 269143,
+			}
+		}
+	}
+});
+
+var Tiktok2ctx = document.getElementById('Tiktok2').getContext('2d');
+
+var Tiktok2 = new Chart(Tiktok2ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Likes',
+			data: [232000,255000,548100],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 10000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 232000,
+			}
+		}
+	}
+});
+
+var Tiktok2dctx = document.getElementById('Tiktok2d').getContext('2d');
+
+var Tiktok2d = new Chart(Tiktok2dctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Likes',
+			data: [232000,255000,548100],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 10000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 232000,
+			}
+		}
+	}
+});
+
+var Twitch1ctx = document.getElementById('Twitch1').getContext('2d');
+
+var Twitch1 = new Chart(Twitch1ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Seguidores',
+			data: [112000,120000,125000],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 10000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 112000,
+			}
+		}
+	}
+});
+
+var Twitch2ctx = document.getElementById('Twitch2').getContext('2d');
+
+var Twitch2 = new Chart(Twitch2ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Viewers',
+			data: [109,131,270],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 100,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 109,
+			}
+		}
+	}
+});
+
+var Twitch2dctx = document.getElementById('Twitch2d').getContext('2d');
+
+var Twitch2d = new Chart(Twitch2dctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Viewers',
+			data: [109,131,270],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 100,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 109,
+			}
+		}
+	}
+});
+
+var Twitch3ctx = document.getElementById('Twitch3').getContext('2d');
+
+var Twitch3 = new Chart(Twitch3ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Vistas',
+			data: [525000,606000,680000],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 10000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 525000,
+			}
+		}
+	}
+});
+
+var Twitter1ctx = document.getElementById('Twitter1').getContext('2d');
+
+var Twitter1 = new Chart(Twitter1ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Impresiones',
+			data: [2370000,1500000,1090000],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 1000000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 1090000,
+			}
+		}
+	}
+});
+
+var Twitter2ctx = document.getElementById('Twitter2').getContext('2d');
+
+var Twitter2 = new Chart(Twitter2ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Visitas',
+			data: [136000,138000,110000],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 100000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 110000,
+			}
+		}
+	}
+});
+
+var Twitter2dctx = document.getElementById('Twitter2d').getContext('2d');
+
+var Twitter2d = new Chart(Twitter2dctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Visitas',
+			data: [136000,138000,110000],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 100000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 110000,
+			}
+		}
+	}
+});
+
+var Youtube1ctx = document.getElementById('Youtube1').getContext('2d');
+
+var Youtube1 = new Chart(Youtube1ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Visitas totales',
+			data: [3672951,3709420,3899902],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 100000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 3672951,
+			}
+		}
+	}
+});
+
+
+var Youtube1dctx = document.getElementById('Youtube1d').getContext('2d');
+
+var Youtube1d = new Chart(Youtube1dctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Visitas totales',
+			data: [3672951,3709420,3899902],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 100000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 3672951,
+			}
+		}
+	}
+});
+
+var Youtube2ctx = document.getElementById('Youtube2').getContext('2d');
+
+var Youtube2 = new Chart(Youtube2ctx, {
+	type: 'line',
+	data: {
+		labels: currentTIME,
+		datasets: [{
+			label: 'Suscriptores',
+			data: [88800,89100,89184],
+			lineTension: 0.3,
+			fill: true,
+			backgroundColor: ['rgba(255, 255, 255, 0.1)'],
+			borderColor: ['rgba(255, 255, 255, 0.8)'],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		plugins: {legend: false},
+		
+		scales: {
+			x: {ticks: {font: {size: 15}},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'}},
+			y: {
+				ticks: {font: {size: 15},stepSize: 1000,},
+				grid: {color: 'rgba(220, 220, 220, 0.05)'},
+				min: 88800,
+			}
+		}
+	}
+});
+function Updateame(tiempo){
+    Instagram1.data.labels = tiempo
+	Instagram2.data.labels = tiempo
+	Instagram3.data.labels = tiempo
+	Instagram3d.data.labels = tiempo
+	Tiktok1.data.labels = tiempo
+	Tiktok2.data.labels = tiempo
+	Tiktok2d.data.labels = tiempo
+	Twitch1.data.labels = tiempo
+	Twitch2.data.labels = tiempo
+	Twitch2d.data.labels = tiempo
+	Twitch3.data.labels = tiempo
+	Twitter1.data.labels = tiempo
+	Twitter2.data.labels = tiempo
+	Twitter2d.data.labels = tiempo
+	Youtube1.data.labels = tiempo
+	Youtube1d.data.labels = tiempo
+	Youtube2.data.labels = tiempo
+	Instagram1.update()
+	Instagram2.update()
+	Instagram3.update()
+	Instagram3d.update()
+	Tiktok1.update()
+	Tiktok2.update()
+	Tiktok2d.update()
+	Twitch1.update()
+	Twitch2.update()
+	Twitch2d.update()
+	Twitch3.update()
+	Twitter1.update()
+	Twitter2.update()
+	Twitter2d.update()
+	Objetivos1.update()
+	Objetivos2.update()
+	Youtube1.update()
+	Youtube1d.update()
+	Youtube2.update()
+}
+</script>
+
 </html>
