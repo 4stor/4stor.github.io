@@ -586,6 +586,21 @@
 			margin: 0 auto
 		}
 
+		#switch-es {
+			cursor:pointer;
+			width:25px;
+			height:25px;
+			background: url("images/language.svg") no-repeat;
+		}
+
+		#switch-en {
+			cursor:pointer;
+			width:25px;
+			height:25px;
+			background: url("images/languagehover.svg") no-repeat;
+		}
+
+
 		.bee-text {
 			overflow-wrap: anywhere
 		}
@@ -626,7 +641,8 @@
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-text">
-<button id="switch-es"><img alt="" height="25px" src="images/language.svg" width="auto"/></button>
+<button lang="es" id="switch-es"></button>
+<button lang="en" id="switch-en"></button>
 <div class="bee-text-content" style="color: #C0C0C0; font-size: 12px; font-family: inherit;">
 <p lang="en" style="font-size: 12px; line-height: 28px; text-align: center;"><em style="">All information shown below is confidential.</em></p>
 <p lang="es" style="font-size: 12px; line-height: 28px; text-align: center;"><em style="">Toda informacion mostrada a continuacion es de caracter confidencial.</em></p>
@@ -2692,6 +2708,14 @@ $('[lang="es"]').hide();
 var currentTIME =  ['June', 'July', 'August']
 
 $('#switch-es').click(function() {
+  $('[lang="es"]').toggle();
+  $('[lang="en"]').toggle();
+  if ($('[lang="es"]').is(":visible")){currentTIME = ['Junio', 'Julio', 'Agosto']}
+  if ($('[lang="en"]').is(":visible")){currentTIME = ['June', 'July', 'August']}
+  Updateame(currentTIME)
+});
+
+$('#switch-en').click(function() {
   $('[lang="es"]').toggle();
   $('[lang="en"]').toggle();
   if ($('[lang="es"]').is(":visible")){currentTIME = ['Junio', 'Julio', 'Agosto']}
