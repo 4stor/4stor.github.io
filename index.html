@@ -286,6 +286,28 @@
 			margin-left: 0;
 			margin-right: 0
 		}
+		
+
+		.start{
+			animation: trew-pulse 1s 3; 
+		}
+
+		.start-text{
+			animation: trew-text 1s 3; 
+		}
+
+		@keyframes trew-text {
+  		 	 0% { transform: translate(0,0) }
+   			 50% { transform: translate(10%,0) }
+    		100% { transform: translate(0,0) }
+		}
+
+
+		@keyframes trew-pulse {
+  		 	 0% { transform: scale(1); }
+   			 25% { transform: scale(1.3); transform: rotate(360deg) }
+    		100% { transform: scale(1); transform: rotate(-360deg) }
+		}
 
 		.bee-row-13 .bee-col-1 .bee-block-2,
 		.bee-row-16 .bee-col-1 .bee-block-2,
@@ -643,9 +665,9 @@
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-text">
 <button lang="es" id="switch-es"></button>
-<button lang="en" id="switch-en"></button>
+<button lang="en" id="switch-en" class="start"></button>
 <div class="bee-text-content" style="color: #C0C0C0; font-size: 12px; font-family: inherit;">
-<p lang="en" style="font-size: 12px; line-height: 28px; text-align: center;"><em style="">All information shown below is confidential.</em></p>
+<p id="confidential" class="start-text" lang="en" style="font-size: 12px; line-height: 28px; text-align: center;"><em style="">Cambio de idioma / Language switch</em></p>
 <p lang="es" style="font-size: 12px; line-height: 28px; text-align: center;"><em style="">Toda informacion mostrada a continuacion es de caracter confidencial.</em></p>
 </div>
 </div>
@@ -2706,7 +2728,12 @@ Impressions
 
 
 $('[lang="es"]').hide();
+
+
 var currentTIME =  ['June', 'July', 'August']
+
+setTimeout(function(){$('#switch-en').removeClass('start'); $('#confidential').removeClass('start-text');$('#confidential').text( "All information shown below is confidential." );}, 3000);
+
 
 $('#switch-es').click(function() {
   $('[lang="es"]').toggle();
